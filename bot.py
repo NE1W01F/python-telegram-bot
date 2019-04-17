@@ -92,7 +92,7 @@ def updateUserInfo(chat_id, username):
     return True
 
 
-Token = ""
+Token = "<Your Bot API key>"
 bot = telepot.Bot(Token)
 task = open('tasks/task_{}'.format(str(datetime.date.today())), 'w')
 
