@@ -110,7 +110,7 @@ def handle(msg):
                 if usercheck:
                     if '/appeal' in message.lower():
                         bot.sendMessage(chat_id, "Your appeal has been sent please wait\nof an admin to contact you.")
-                        bot.sendMessage('736627724', "User @{} has requested an appeal".format(msg['from']['username']))
+                        bot.sendMessage('<your user_id>', "User @{} has requested an appeal".format(msg['from']['username']))
                     else:
                         bot.sendMessage(chat_id, "You have been banned from talking to this bot\n\nYou can appeal the ban by sending /appeal\nan admin will contact you and will decide")
                 if usercheck is not True:
